@@ -1,0 +1,8 @@
+     4    40
+   160    16     0        nx nkptx nkreal
+     1                    Mspin
+     2     3              lwmax nprojx
+   192    64    64        nr1x nr2x nr3x
+ 24992   99888            ngwx ngx
+  4000  1000  1024    16   512
+    24     1     4     1        nfchkx nsym nsplit_k nsplit_c

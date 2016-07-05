@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Generate input 10
+  
+  cat inp10_98 tail_10 > xx_inp10
+
+# Generate input 20
+
+  cat head_01 > xx_inp20_$1
+  cat head_02 > xx_inp20_$2
+  echo " $3     $4     1.0   1.0   0.0    TFIE_NL EFIELDX GWID_S ALPHA0" >> xx_inp20_$1
+  echo " $3     $4     1.0   1.0   0.0    TFIE_NL EFIELDX GWID_S ALPHA0" >> xx_inp20_$2
+  echo " .f.    0.0                   TCUTHIG  FCUT" >> xx_inp20_$1
+  echo " .f.    0.0                   TCUTHIG  FCUT" >> xx_inp20_$2
+  echo " .t.    0.05    .f. " >> xx_inp20_$1
+  echo " .t.    0.05    .t. " >> xx_inp20_$2
+  cat inp20_98 >> xx_inp20_$1
+  cat inp20_98 >> xx_inp20_$2
+

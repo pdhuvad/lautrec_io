@@ -1,0 +1,18 @@
+ -6      100000  100000  5  100000   NBEG    NDR      NDW NOMORE IPRINT
+ 6.0     300.    10.00               DELTAT  EMASS    ECUTMASS
+  2                                    IMOVE   (SD=1,DD=2,MD=3,NS=4)
+ .t.     1.E-12   100                 TORTHO  EPS      MAX
+  1      0.00   1.E-9                 NSTEPE  DAMPE TOLE
+ .f.     0.01   15000.                TZE_NE  EKINCW   QNE
+ .f.     0.0001                       TRANE   AMPRE
+ .f.    .f.      .f.                  TEIGENV TWRHOFE  TNONSC
+  1      1.0  .f.                     IMOVP (NO=0,SD=1,DD=2,MD=3,NS=4)  QUENCH
+  0.00   0.0010                       TPREF   DAMP
+ .f.     300.0  50000.                TZE_NP  TKELF0   QNP
+ .f.    .f.     300.0                 TVPRNS  TMPRNS   TFINAL
+ .f.     0.10                         TRANP   AMPRP
+ .f.     20.0  -1                     TDIAG   TSMEAR FMIN 
+  1000.0 0.06   1.E-8                 HDYNM   HDYNF
+ .f.     0.0    0.0                   TFIELD ZJUMP VJUMP
+ .f. 400 200 501 -1  0.1              TREAL NR_PJ NQ_PJ NRMX NBEG_PJ RCRUST
+ 3.0 3.0 3.0 3.0                      RSPH (1..nsx)
